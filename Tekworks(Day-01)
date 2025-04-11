@@ -1,0 +1,88 @@
+                        
+1.
+     inter=int(input())
+     exter=int(input())
+     proj=int(input())
+if(inter>=50 and exter>=50 and proj>=50):
+    total_score=(((proj*70)/100)+((exter*20)/100)+((inter*10)/100))
+    print(total_score)
+    if(total_score>=90):
+        print("grade A")
+    elif(total_score>=70):
+        print("grade B")
+    else:
+        print("grade C") 
+    print("pass")
+elif(inter<50):
+        print("you got failed in internal and score is",inter)
+elif(exter<50):
+         print("you got failed in external and score is",exter)
+else:
+         print("you got failed in project and score is",proj)    
+
+
+
+2. prev=int(input("Enter Prev units"))
+   pres=int(input("Enter Pres units"))
+units=pres-prev   
+bill=0
+if units<=50:
+    bill=units*0.50
+elif units<=150:
+    bill= 50*0.50+(units-50)*0.75
+elif units<=250:
+    bill=50*0.50+(100*0.75)+(units-150)*1.25
+else:
+    bill=50*0.50+(100*0.75)+(100*1.25)+(units-250)*2.50
+bill=bill+(bill*18)/100
+
+
+3.
+   veg=150
+   non_veg=200
+   combo=300
+   meal_type=input("Enter your meal type 1.veg 2.nonveg 3.combo:")
+   quantity=int(input("Enter the quantity"))
+   festival=input("Enter yes/no:")
+if festival=='yes':
+    if meal_type=='1':
+        bill=veg*quantity
+        bill=bill-(bill*10)/100
+    elif meal_type=='2':
+        bill=non_veg*quantity
+        bill=bill-(bill*10)/100
+    else:
+        bill=combo*quantity
+        bill=bill-(bill*10)/100
+       # print(bill)
+else:
+    if meal_type=='1':
+        bill=veg*quantity
+    elif meal_type=='2':
+        bill=non_veg*quantity
+    else:
+        bill=combo*quantity
+        #print(bill)
+if bill>1000:
+    print("free desert")
+bill=bill+((bill*5)/100)
+print(bill)
+
+
+4.
+   Student_name=input()
+   percentage_10th=int(input())
+   Percentage_12th=int(input())
+   Percentage_UG=int(input())
+   income=int(input())
+if(percentage_10th>=85 and Percentage_12th>=85 and Percentage_UG>=85 and income<3):
+    print("Full Scholarship")
+elif(Percentage_UG==70 and income<5):
+    print("Partial Scolarship")
+else:
+    print("Not Eligible")
+
+
+
+
+   
