@@ -22,19 +22,21 @@ else:
 
 
 
-2. prev=int(input("Enter Prev units"))
-   pres=int(input("Enter Pres units"))
-units=pres-prev   
-bill=0
+2. prev=int(input("enter previous value"))
+   pres=int(input("enter present value"))
+   units=prev-pres
+   total=0
 if units<=50:
-    bill=units*0.50
+    total=50*0.50
 elif units<=150:
-    bill= 50*0.50+(units-50)*0.75
+    total=50*0.50+(unit-50)*0.75
 elif units<=250:
-    bill=50*0.50+(100*0.75)+(units-150)*1.25
+    total=50*0.50+(100*0.75)+(unit-150)*1.25
 else:
-    bill=50*0.50+(100*0.75)+(100*1.25)+(units-250)*2.50
-bill=bill+(bill*18)/100
+    total=50*0.50+(100*0.75)+(100*1.25)+(unit-250)*2.50
+
+bill=total+(total*18)/100
+print(bill)
 
 
 3.
