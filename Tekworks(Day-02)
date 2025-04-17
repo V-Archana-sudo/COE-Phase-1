@@ -1,0 +1,80 @@
+amount=int(input("Enter your amount"))   #1800
+five=0
+two=0
+one=0
+if amount%100==0:
+    five=amount//500
+    print("500 rupees notes are:",five)
+    amount=amount-(five*500)
+    two=amount//200
+    print("200 rupees notes are:",two)
+    amount=amount-(two*200)
+    one=amount//100
+    print("100 rupees notes are:",one)
+
+
+
+
+amount=int(input("Enter your amount"))   #1800
+five=0
+two=0
+one=0
+if amount%100==0:
+    if amount>=500:
+        five=amount//500
+        print("500 rupees notes are:",five)
+        amount=amount-(five*500)
+    if amount>=200:
+        two=amount//200
+        print("200 rupees notes are:",two)
+        amount=amount-(two*200)
+    if amount>=100:
+        one=amount//100
+        print("100 rupees notes are:",one)
+
+
+
+
+
+amount=int(input("Enter your amount"))   #1800
+five=0
+two=0
+one=0
+if amount%100==0:
+    if amount>=500:
+        five=amount//500
+        print("500 rupees notes are:",five)
+        amount=amount-(five*500)
+    if amount>=200:
+        two=amount//200
+        print("200 rupees notes are:",two)
+        amount=amount-(two*200)
+    if amount>=100:
+        one=amount//100
+        print("100 rupees notes are:",one)
+else:
+    print("Please enter multiples of 100 only")
+
+
+
+
+
+
+
+
+Basic_salary=int(input("Enter basic salary"))
+if Basic_salary<20000:
+    HRA=(Basic_salary*76)/100
+    DA=(Basic_salary*78)/100
+    print(f" HRA is {HRA} and DA is {DA}")
+elif Basic_salary<30000:
+    HRA=(Basic_salary*79)/100
+    DA=(Basic_salary*82)/100
+    print(f" HRA is {HRA} and DA is {DA}")
+else:
+    HRA=(Basic_salary*85)/100
+    DA=(Basic_salary*89)/100
+    print(f" HRA is {HRA} and DA is {DA}")
+gross_salary=Basic_salary+HRA+DA
+print(gross_salary)
+
