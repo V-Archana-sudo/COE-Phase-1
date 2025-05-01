@@ -1,0 +1,11 @@
+K0 = float(input("Enter the initial balance (K0): "))
+interest_rate = float(input("Enter the annual interest rate (in %): "))
+n = int(input("Enter the number of years: "))
+interest_rate = interest_rate / 100
+Kn = K0
+year = 0
+while year < n:
+    Kn = Kn + (Kn * interest_rate)
+    year += 1
+    print(f"Year {year}: Capital = {Kn:.2f}")
+print(f"\nFinal capital after {n} years is: {Kn:.2f}")
