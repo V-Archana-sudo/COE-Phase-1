@@ -1,0 +1,6 @@
+my_list = [12, 24, 35, 24, 88, 120, 155, 88, 120, 155]
+my_list.remove(24)
+my_list.remove(88)  
+my_list.remove(120) 
+my_list.reverse()
+print(my_list)
