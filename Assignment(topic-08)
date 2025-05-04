@@ -1,0 +1,4 @@
+line1 = input("Enter first line: ")
+line2 = input("Enter second line: ")
+print(line1.upper())
+print(line2.upper())
