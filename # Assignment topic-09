@@ -1,0 +1,15 @@
+def preLetterCase(s, letter):
+    lower_s = s.lower()
+    lower_letter = letter.lower()
+    index = lower_s.find(lower_letter)
+    if index == -1:
+        return s.lower()
+    if index == 0:
+        return s.upper()
+    before = s[:index].lower()
+    after = s[index:].upper()
+    return before + after
+print(preLetterCase("CAtCHa", "a"))       
+print(preLetterCase("Preteen", "e"))       
+print(preLetterCase("You've got this", "m"))  
+print(preLetterCase("Keep trying", "k"))   
