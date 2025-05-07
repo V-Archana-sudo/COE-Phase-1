@@ -1,0 +1,14 @@
+sid = input("Enter Student Id: ")
+sname = input("Enter Student Name: ")
+sclass = input("Enter Student Class: ")
+class Student:
+    def display(self):
+        print("Original attributes and their values of the Student class:")
+        print("Student ID:", self.id)
+        print("Student Name:", self.name)
+        print("Student Class:", self.sclass)
+p = Student()
+p.id = sid
+p.name = sname
+p.sclass = sclass
+p.display()
